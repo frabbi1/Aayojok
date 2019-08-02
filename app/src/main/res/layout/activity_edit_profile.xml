@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:padding="20dp"
+                  android:layout_height="wrap_content">
+
+        <TextView android:layout_width="match_parent"
+                  android:text="Name (*rquired)"
+                  android:textColor="#4e92d2"
+                  android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+                  android:id="@+id/nameF"
+                  android:layout_marginBottom="10dp"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="Age (*rquired)"
+                  android:textColor="#4e92d2"
+                  android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+                  android:id="@+id/ageF"
+                  android:layout_marginBottom="10dp"
+                  android:inputType="number"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="Gender (*rquired)"
+                  android:textColor="#4e92d2"
+                  android:layout_height="wrap_content"/>
+        <RadioGroup android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/radiogrp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content"
+                         android:id="@+id/male"
+                         android:text="Male"
+                         android:layout_height="wrap_content"/>
+            <RadioButton android:layout_width="wrap_content"
+                         android:id="@+id/female"
+                         android:text="Female"
+                         android:layout_marginLeft="10dp"
+                         android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <TextView android:layout_width="match_parent"
+                  android:text="Phone No (*rquired)"
+                  android:textColor="#4e92d2"
+                  android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/phoneF"
+                  android:layout_marginBottom="10dp"
+                  android:inputType="phone"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:text="Occupation"
+                  android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_marginBottom="10dp"
+                  android:id="@+id/occupationF"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:text="Institution"
+                  android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+                  android:id="@+id/insF"
+                  android:layout_marginBottom="10dp"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:text="Nationality"
+                  android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_marginBottom="10dp"
+                  android:id="@+id/nationalityF"
+                  android:layout_height="wrap_content"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Information"
+                android:id="@+id/save"
+                android:background="@drawable/utility_button"
+        />
+    </LinearLayout>
+
+</ScrollView>

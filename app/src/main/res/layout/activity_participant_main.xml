@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ParticipantActivity.ParticipantMainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_gravity="center"
+                  android:layout_margin="15dp"
+                  android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           android:layout_margin="20dp"
+                                           android:id="@+id/cv_p_all_event"
+                                           app:cardBackgroundColor="@color/utility"
+                                           app:cardPreventCornerOverlap="false"
+                                           app:cardUseCompatPadding="true"
+                                           app:cardCornerRadius="20dp"
+                                           android:layout_height="100dp">
+            <TextView android:layout_width="match_parent"
+                      android:layout_gravity="center"
+                      android:textSize="25sp"
+                      android:text="My All Events"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:textColor="#105A0B"
+                      android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           android:layout_margin="20dp"
+                                           android:id="@+id/cv_join_event"
+                                           app:cardUseCompatPadding="true"
+                                           app:cardBackgroundColor="@color/utility"
+                                           app:cardPreventCornerOverlap="false"
+                                           app:cardCornerRadius="20dp"
+                                           android:layout_height="100dp">
+            <TextView android:layout_width="match_parent"
+                      android:layout_gravity="center"
+                      android:textSize="25sp"
+                      android:text="(+)   Join New Event"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:textColor="#105A0B"
+                      android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           android:layout_margin="20dp"
+                                           app:cardCornerRadius="20dp"
+                                           android:id="@+id/cv_profile"
+                                           app:cardUseCompatPadding="true"
+                                           app:cardBackgroundColor="@color/utility"
+                                           app:cardPreventCornerOverlap="false"
+                                           android:layout_height="100dp">
+            <TextView android:layout_width="match_parent"
+                      android:layout_gravity="center"
+                      android:textSize="25sp"
+                      android:text="My Profile"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:textColor="#105A0B"
+                      android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+        <Button android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/log_out_btn"
+                android:text="Log Out"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_google"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

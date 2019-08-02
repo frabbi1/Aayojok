@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.EventDetails">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+       <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                          android:layout_margin="8dp"
+                                          app:cardBackgroundColor="@color/utility"
+                                          app:cardCornerRadius="5dp"
+                                          app:cardElevation="5dp"
+                                          android:layout_height="301dp">
+           <LinearLayout android:layout_width="match_parent"
+                         android:orientation="vertical"
+                         android:layout_height="match_parent">
+               <ImageView android:layout_width="300dp"
+                          android:layout_height="200dp"
+                          android:src="@drawable/bnr"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginTop="15dp"
+               />
+               <Button android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="15dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_margin = "10dp"
+                        android:text="Change Details"
+                       android:id="@+id/btn_change_details"
+                       android:textAllCaps="false"
+                        android:background="@drawable/utility_button"
+                        android:layout_height="wrap_content"/>
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           app:cardBackgroundColor="@color/utility"
+                                           android:padding="20dp"
+                                           app:cardCornerRadius="5dp"
+                                           app:cardElevation="5dp"
+                                           android:layout_margin="8dp"
+                                           android:layout_height="wrap_content">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_height="match_parent">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="15dp"
+                              android:padding="5dp"
+                              android:background="@drawable/border"
+                              android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent"
+                              android:text="Event ID"
+                              android:textColor="#010F8B"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:text=""
+                              android:textColor="@color/black"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="15dp"
+                              android:padding="5dp"
+                              android:background="@drawable/border"
+                              android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent"
+                              android:text="Event Name"
+                              android:textColor="#010F8B"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:text=""
+                              android:textColor="@color/black"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="15dp"
+                              android:padding="5dp"
+                              android:background="@drawable/border"
+                              android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent"
+                              android:text="Description"
+                              android:textColor="#010F8B"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:text=""
+                              android:textColor="@color/black"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="15dp"
+                              android:padding="5dp"
+                              android:background="@drawable/border"
+                              android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent"
+                              android:text="Event Location"
+                              android:textColor="#010F8B"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:text="fxfgxfgsz rstrsdr trd d du yt dyutddu yddt gfuy"
+                              android:textColor="@color/black"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+                    <Button android:layout_width="match_parent"
+                            android:text="See on Map"
+                            android:layout_margin="10dp"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@drawable/utility_button"
+                            android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="15dp"
+                              android:padding="5dp"
+                              android:background="@drawable/border"
+                              android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent"
+                              android:text="Start Date"
+                              android:textColor="#010F8B"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:text="Event Nasme"
+                              android:textColor="@color/black"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="15dp"
+                              android:padding="5dp"
+                              android:background="@drawable/border"
+                              android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent"
+                              android:text="End Date"
+                              android:textColor="#010F8B"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:text="Event Nasme"
+                              android:textColor="@color/black"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="15dp"
+                              android:padding="5dp"
+                              android:background="@drawable/border"
+                              android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent"
+                              android:text="Event Code"
+                              android:textColor="#010F8B"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:text="Event Nasme"
+                              android:textColor="@color/black"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="15dp"
+                              android:padding="5dp"
+                              android:background="@drawable/border"
+                              android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent"
+                              android:text="RP Code"
+                              android:textColor="#010F8B"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:text="Event Nasme"
+                              android:textColor="@color/black"
+                              android:textSize="20sp"
+                              android:layout_margin="5dp"
+                              android:gravity="center"
+                              android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

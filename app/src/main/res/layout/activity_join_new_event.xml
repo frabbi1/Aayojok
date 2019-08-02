@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:padding="80dp"
+                      android:layout_height="match_parent">
+            <TextView
+                    android:text="EventID"
+                    android:layout_width="match_parent"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/eventID"
+                    android:layout_marginBottom="20dp"
+            />
+            <TextView
+                    android:text="Event Code"
+                    android:layout_width="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/eventCode"
+                    android:layout_marginBottom="20dp"
+            />
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JOIN"
+                    android:id="@+id/btnJoin"
+                    android:background="@drawable/utility_button"
+            />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

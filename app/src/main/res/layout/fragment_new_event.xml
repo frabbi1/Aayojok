@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:padding="10dp"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="match_parent"
+                  android:text="Event Details Input"
+                  android:textSize="15sp"
+                  android:gravity="center"
+                  android:textColor="@color/black"
+                  android:layout_marginBottom="15dp"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="Event Name* : "
+                  android:textSize="18sp"
+                  android:textColor="@color/black"
+                  android:layout_marginBottom="2dp"
+                  android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+                  android:id="@+id/edt_event_name"
+                  android:layout_marginBottom="30dp"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="Short Description* :"
+                  android:textSize="18sp"
+                  android:textColor="@color/black"
+                  android:layout_marginBottom="2dp"
+                  android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+                  android:id="@+id/edt_sd"
+                  android:layout_marginBottom="30dp"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="Event Banner :"
+                  android:textSize="18sp"
+                  android:textColor="@color/black"
+                  android:layout_marginBottom="2dp"
+                  android:layout_height="wrap_content"/>
+        <ImageView android:layout_width="250dp"
+                   android:layout_marginBottom="10dp"
+                   android:src="@drawable/banner"
+                   android:layout_marginTop="10dp"
+                   android:layout_gravity="center"
+                   android:layout_height="150dp"/>
+        <Button android:layout_width="match_parent"
+                android:layout_marginBottom="30dp"
+                android:text="Click to upload"
+                android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:text="Event Start Date* :"
+                  android:textSize="18sp"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="Not set yet"
+                  android:id="@+id/sdate_tv"
+                  android:gravity="center"
+                  android:textSize="18sp"
+                  android:layout_height="wrap_content"/>
+        <Button android:layout_width="match_parent"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/sdate"
+                android:text="Set Start Date"
+                android:layout_height="wrap_content"/>
+
+
+
+        <TextView android:layout_width="match_parent"
+                  android:text="Event End Date* :"
+                  android:textSize="18sp"
+
+                  android:textColor="@color/black"
+
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="Not set yet"
+                  android:id="@+id/tv_edate"
+                  android:gravity="center"
+                  android:textSize="18sp"
+                  android:layout_height="wrap_content"/>
+        <Button android:layout_width="match_parent"
+                android:text="Set End Date"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/btn_edate"
+                android:layout_height="wrap_content"/>
+
+
+
+        <TextView android:layout_width="match_parent"
+                  android:text="Event Location :"
+                  android:textSize="18sp"
+                  android:textColor="@color/black"
+                  android:layout_marginBottom="5dp"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="Not set yet"
+                  android:gravity="center"
+                  android:textSize="18sp"
+                  android:layout_height="wrap_content"/>
+
+        <Button android:layout_width="match_parent"
+                android:text="Set Location"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:text="Validatory Documents :"
+                  android:textSize="18sp"
+                  android:textColor="@color/black"
+                  android:layout_marginBottom="5dp"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:text="No file selected"
+                  android:gravity="center"
+                  android:textSize="18sp"
+                  android:layout_height="wrap_content"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click To Upload File"
+                android:id="@+id/uploadButton"
+        />
+
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_margin="15dp"
+                android:background="@drawable/utility_button"
+                android:id="@+id/btn_submit"
+        />
+
+    </LinearLayout>
+
+</ScrollView>
