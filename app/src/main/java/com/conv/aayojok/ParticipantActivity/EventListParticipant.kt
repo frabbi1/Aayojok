@@ -32,7 +32,7 @@ class EventListParticipant : AppCompatActivity() {
             override fun onResponse(call: Call<List<Event>>, response: Response<List<Event>>){
                 if(response.isSuccessful){
                     var e = response.body()!!.toMutableList()
-                    EventSupplier.eventList = e
+                    EventSupplier.eventList = e.asReversed()
                     val adapter =  MyEventAdapter(this@EventListParticipant, EventSupplier.getList())
                     event_rec_view.adapter = adapter
                     //ParticipantSupplier.setList(response.body()!!)

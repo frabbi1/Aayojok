@@ -18,6 +18,7 @@
                 app:cardCornerRadius="10dp"
                 app:cardBackgroundColor="@color/utility"
                 android:layout_weight="1"
+                android:id="@+id/notices"
                 android:layout_height="match_parent">
 
             <LinearLayout android:layout_width="match_parent"
@@ -29,7 +30,7 @@
 
                 <TextView android:layout_width="match_parent"
                           android:gravity="center"
-                          android:text="Dashboard"
+                          android:text="Notices"
                           android:layout_gravity="center"
                           android:textColor="@color/black"
                           android:textSize="18sp"
@@ -219,7 +220,7 @@
                     app:cardCornerRadius="10dp"
                     app:cardBackgroundColor="@color/utility"
                     android:layout_marginLeft="10dp"
-                    android:id="@+id/cv_notification"
+                    android:id="@+id/cv_rp"
                     android:layout_weight="1"
                     android:layout_height="match_parent">
 
@@ -230,14 +231,14 @@
 
                     <ImageView android:layout_width="match_parent"
                                android:layout_margin="8dp"
-                               android:src="@drawable/notification"
-                               android:layout_height="100dp"
+                               android:src="@drawable/group"
+                               android:layout_height="118dp"
                     />
                     <TextView android:layout_width="match_parent"
                               android:gravity="center"
-                              android:text="Notifications"
+                              android:text="Resource Persons \n Info"
                               android:textColor="@color/black"
-                              android:textSize="18sp"
+                              android:textSize="15sp"
                               android:layout_height="wrap_content"/>
 
                 </LinearLayout>

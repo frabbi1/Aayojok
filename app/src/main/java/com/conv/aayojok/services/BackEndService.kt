@@ -2,10 +2,7 @@ package com.conv.aayojok.services
 
 
 
-import com.conv.aayojok.Models.Event
-import com.conv.aayojok.Models.File
-import com.conv.aayojok.Models.Place
-import com.conv.aayojok.Models.User
+import com.conv.aayojok.Models.*
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -37,8 +34,9 @@ interface BackEndService {
 
 
 
-    @GET("event/notification/{id}")
-    fun getNotification(@Path("id" )id:String): Call<List<String>>*/
+    */
+
+
 
     @POST("participants/add")
     fun addParticipant(@Body newParticipant: User): Call<User>
@@ -69,5 +67,17 @@ interface BackEndService {
 
     @GET("participants/all/{id}")
     fun getAllParticipants(@Path("id" )id:String):Call<List<User>>
+
+    @GET("event/schedule/{id}")
+    fun getSchedule(@Path("id" )id:String):Call<String>
+
+    @GET("event/rpinfo/{id}")
+    fun getRPinfo(@Path("id" )id:String):Call<List<RP>>
+
+    @GET("event/notification/{id}")
+    fun getNotification(@Path("id" )id:String): Call<List<String>>
+
+    @PUT("participants/update/{id}")
+    fun updateParticipant(@Path("id") id:String, @Body newParticipant: User): Call<User>
 
 }

@@ -7,8 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.conv.aayojok.ParticipantActivity.EventMenuParticipant
 import com.conv.aayojok.Models.CurrentEvent
+import com.conv.aayojok.Models.CurrentUser
 import com.conv.aayojok.Models.Event
 import com.conv.aayojok.R
 import kotlinx.android.synthetic.main.card_view_my_event.view.*
@@ -50,7 +53,7 @@ class MyEventAdapter(val context: Context, val events:List<Event>) : RecyclerVie
                     current!!.longitude,
                     current!!.latitude,
                     current!!.code,
-                    "123"
+                    current!!.banner
                 )
                 var intent = Intent(this@MyEventAdapter.context, EventMenuParticipant::class.java)
                 context.startActivity(intent)
@@ -63,6 +66,7 @@ class MyEventAdapter(val context: Context, val events:List<Event>) : RecyclerVie
             this.current = e
 
             itemView.event_name.text = e.name
+            Glide.with(this@MyEventAdapter.context).load(current!!.banner).error(Glide.with(this@MyEventAdapter.context).load(R.drawable.bnr)).into(itemView.img_banner)
 
 
 

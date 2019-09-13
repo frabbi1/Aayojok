@@ -32,9 +32,7 @@ class EventMenuParticipant : AppCompatActivity() {
             var i = Intent(this, PhotoGallery::class.java)
             startActivity(i)
         }
-        cv_notification.setOnClickListener {
 
-        }
 
         cv_participant_list.setOnClickListener {
             var i = Intent(this, ParticipantList::class.java)
@@ -42,9 +40,11 @@ class EventMenuParticipant : AppCompatActivity() {
         }
 
 
-        /*cv_rp.setOnClickListener {
+        cv_rp.setOnClickListener {
+            var i = Intent(this, RPinfo::class.java)
+            startActivity(i)
 
-        }*/
+        }
         cv_event_near_by_place.setOnClickListener {
 
 
@@ -56,9 +56,16 @@ class EventMenuParticipant : AppCompatActivity() {
             startActivity(i)
         }
 
+        notices.setOnClickListener {
+            var i = Intent(this, Notices::class.java)
+            startActivity(i)
+        }
 
 
+    }
 
-
+    override fun onBackPressed() {
+        var i = Intent(this, EventListParticipant::class.java)
+        startActivity(i)
     }
 }

@@ -8,6 +8,7 @@ import android.widget.RadioButton
 import android.widget.Toast
 import com.conv.aayojok.Models.CurrentUser
 import com.conv.aayojok.Models.User
+import com.conv.aayojok.ParticipantActivity.ParticipantMainActivity
 import com.conv.aayojok.R
 import com.conv.aayojok.services.BackEndService
 import com.conv.aayojok.services.ServiceBuilder
@@ -38,7 +39,7 @@ class CreateProfileActivity : AppCompatActivity() {
         save.setOnClickListener {
             if(saveinfo()){
                 Toast.makeText(this, "Profile Updated", Toast.LENGTH_LONG).show()
-                var i = Intent(this, RoleSelector::class.java)
+                var i = Intent(this, ParticipantMainActivity::class.java)
                 startActivity(i)
             }
 

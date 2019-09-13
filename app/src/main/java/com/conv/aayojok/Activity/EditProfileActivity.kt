@@ -12,6 +12,8 @@ import com.conv.aayojok.Models.User
 import com.conv.aayojok.R
 import com.conv.aayojok.services.BackEndService
 import com.conv.aayojok.services.ServiceBuilder
+import retrofit2.Call
+import retrofit2.Response
 
 
 class EditProfileActivity : AppCompatActivity() {
@@ -52,8 +54,29 @@ class EditProfileActivity : AppCompatActivity() {
             if(done){
 
                 val service = ServiceBuilder.buildService(BackEndService::class.java)
-                var user = User(CurrentUser.id, name, email, age, CurrentUser.gender, occupation, institution, phone, nationality, CurrentUser.photo)
+                var user = User(CurrentUser.id, CurrentUser.name, CurrentUser.email, CurrentUser.age, CurrentUser.gender, occupation, institution, phone, nationality, CurrentUser.photo)
+                val requestCall = service.updateParticipant(CurrentUser.id,user)
 
+                requestCall.enqueue(object : retrofit2.Callback<User>{
+                    override fun onResponse(call: Call<User>, response: Response<User>){
+                        if(response.isSuccessful){
+                            var temp = response.body()
+
+
+                        }else{
+
+                            Toast.makeText(this@EditProfileActivity, "Failed to edit information", Toast.LENGTH_SHORT)
+                                .show()
+                        }
+                    }
+
+                    override fun onFailure(call: Call<User>, t: Throwable) {
+                        finish()
+                        Toast.makeText(this@EditProfileActivity, "Information edit failed", Toast.LENGTH_SHORT)
+                            .show()
+
+                    }
+                })
 
                 Toast.makeText(this, "Profile Updated", Toast.LENGTH_LONG).show()
                 if(from == "admin") {

@@ -148,7 +148,7 @@ class MainActivity : AppCompatActivity(),Serializable {
                     }else{
                         CurrentUser.id = id
                         CurrentUser.email = email
-                        CurrentUser.name = name
+                        CurrentUser.name = temp!!.name.toString()
                         CurrentUser.photo = photo
                         CurrentUser.age = temp?.age.toString()
                         CurrentUser.phone = temp?.phone.toString()

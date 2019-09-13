@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ServiceBuilder {
 
-    private var url  = "http://52.29.113.22/ema/"
+    private var url  = "http://18.185.136.57/ema/"
 
     private val okHttp = OkHttpClient.Builder()
 

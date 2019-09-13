@@ -35,3 +35,9 @@ object CurrentUser {
         CurrentUser.id = id
     }
 }
+
+data class RP(
+    var name : String,
+    var email : String,
+    var details : String?
+)

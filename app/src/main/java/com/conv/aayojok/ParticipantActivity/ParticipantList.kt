@@ -31,8 +31,9 @@ class ParticipantList : AppCompatActivity() {
             override fun onResponse(call: Call<List<User>>, response: Response<List<User>>){
                 if(response.isSuccessful){
                     var p = response.body()!!
+                    Toast.makeText(this@ParticipantList, "hoise"+p.size, Toast.LENGTH_SHORT)
                     //ParticipantSupplier.setList(p,p.name)
-                    val adapter =  ParticipantAdapter(this@ParticipantList, p)
+                    val adapter =  ParticipantAdapter(this@ParticipantList, p.reversed())
                     participant.adapter = adapter
                     //Toast.makeText(this@ParticipantListActivity, "hoise", Toast.LENGTH_SHORT)
                     //   .show()

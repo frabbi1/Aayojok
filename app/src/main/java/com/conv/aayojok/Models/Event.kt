@@ -10,7 +10,7 @@ data class Event (
     val longitude:String,
     val latitude:String,
     val code:String,
-    val rpCode:String
+    val banner:String
 )
 
 object EventSupplier{
@@ -41,7 +41,7 @@ object CurrentEvent{
         var longitude:String = ""
         var latitude:String = ""
         var code = ""
-        var rpCode = ""
+        var banner = ""
 
         fun setEventDetails(
             id:String,
@@ -53,7 +53,7 @@ object CurrentEvent{
             longitude:String,
             latitude:String,
             code: String,
-            rpCode: String
+            banner: String
 
         ){
             this.id = id
@@ -65,7 +65,7 @@ object CurrentEvent{
             this.longitude = longitude
             this.latitude = latitude
             this.code = code
-            this.rpCode = rpCode
+            this.banner = banner
         }
 
 
